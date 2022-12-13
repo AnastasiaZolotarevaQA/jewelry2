@@ -1,0 +1,149 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif, "Dancing Script", cursive;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.containerk {
+  height: 100vh;
+  width: 100%;
+}
+
+/*** header ***/
+
+.header {
+  background-color: #1f1f1f;
+  border-top: solid 5px #a17d2a;
+  border-bottom: solid 5px #a17d2a;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-brand {
+  font-size: 34px;
+  font-family: "Dancing Script", cursive;
+  color: #a17d2a;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.logo-icon {
+  display: block;
+  fill: #fff;
+  height: 25px;
+  width: 25px;
+
+  transition: fill 0.1s linear;
+}
+
+.header-icon:hover .logo-icon {
+  fill: #f3af0f;
+}
+
+.header-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+  background-color: #1f1f1f;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #0f0e0e;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  border-top: solid 5px #a17d2a;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #a17d2a;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: #ffb300;
+  background-color: #1f1f1f;
+}
+
+.header-link:hover {
+  color: #ffb300;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  fxlex: wrap;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: capitalize;
+}

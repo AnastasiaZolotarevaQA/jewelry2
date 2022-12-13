@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="lib/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="lib/owlcarousel/owl.theme.default.min.css" />
+    <!--nevajdzigs-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Montserrat:300,400,500,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <!-- Load Font Awesome Icon Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/stylenew.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- sprite -->
+
+    <svg style="display: none">
+      <symbol id="diamond" viewBox="0 0 299.429 299.429">
+        <g>
+          <path
+            d="M245.185,44.209H54.245L0,116.533l149.715,138.688l149.715-138.682L245.185,44.209z
+                 M206.746,121.778l-57.007,112.1l-56.53-112.1H206.746z M98.483,109.844l51.232-51.232l51.232,51.232H98.483z M164.119,56.142
+                h69.323L213.876,105.9L164.119,56.142z M86.311,105.142l-16.331-49h65.331L86.311,105.142z M79.849,121.778l49.632,98.429
+                L23.223,121.778H79.849z M220.136,121.778h56.071l-106.013,98.203L220.136,121.778z M225.148,109.844l18.694-47.538l35.652,47.538
+                H225.148z M58.266,58.738l17.035,51.112H19.929L58.266,58.738z"
+          />
+        </g>
+      </symbol>
+      <symbol id="home" viewBox="0 0 460.298 460.297">
+        <g>
+          <path
+            d="M230.149,120.939L65.986,256.274c0,0.191-0.048,0.472-0.144,0.855c-0.094,0.38-0.144,0.656-0.144,0.852v137.041
+            c0,4.948,1.809,9.236,5.426,12.847c3.616,3.613,7.898,5.431,12.847,5.431h109.63V303.664h73.097v109.64h109.629
+            c4.948,0,9.236-1.814,12.847-5.435c3.617-3.607,5.432-7.898,5.432-12.847V257.981c0-0.76-0.104-1.334-0.288-1.707L230.149,120.939
+            z"
+          />
+          <path
+            d="M457.122,225.438L394.6,173.476V56.989c0-2.663-0.856-4.853-2.574-6.567c-1.704-1.712-3.894-2.568-6.563-2.568h-54.816
+            c-2.666,0-4.855,0.856-6.57,2.568c-1.711,1.714-2.566,3.905-2.566,6.567v55.673l-69.662-58.245
+            c-6.084-4.949-13.318-7.423-21.694-7.423c-8.375,0-15.608,2.474-21.698,7.423L3.172,225.438c-1.903,1.52-2.946,3.566-3.14,6.136
+            c-0.193,2.568,0.472,4.811,1.997,6.713l17.701,21.128c1.525,1.712,3.521,2.759,5.996,3.142c2.285,0.192,4.57-0.476,6.855-1.998
+            L230.149,95.817l197.57,164.741c1.526,1.328,3.521,1.991,5.996,1.991h0.858c2.471-0.376,4.463-1.43,5.996-3.138l17.703-21.125
+            c1.522-1.906,2.189-4.145,1.991-6.716C460.068,229.007,459.021,226.961,457.122,225.438z"
+          />
+        </g>
+      </symbol>
+      <symbol id="cart" viewBox="0 0 510 510">
+        <g>
+          <path
+            d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306
+            c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7
+            c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408
+            c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"
+          />
+        </g>
+      </symbol>
+      <symbol id="heart" viewBox="0 0 510 510">
+        <g>
+          <path
+            d="M255,489.6l-35.7-35.7C86.7,336.6,0,257.55,0,160.65C0,81.6,61.2,20.4,140.25,20.4c43.35,0,86.7,20.4,114.75,53.55
+            C283.05,40.8,326.4,20.4,369.75,20.4C448.8,20.4,510,81.6,510,160.65c0,96.9-86.7,175.95-219.3,293.25L255,489.6z"
+          />
+        </g>
+      </symbol>
+      <symbol id="user" viewBox="0 0 258.75 258.75">
+        <g>
+          <circle cx="129.375" cy="60" r="60" />
+          <path
+            d="M129.375,150c-60.061,0-108.75,48.689-108.75,108.75h217.5C238.125,198.689,189.436,150,129.375,150z"
+          />
+        </g>
+      </symbol>
+      <symbol id="facebook" viewBox="0 0 96.124 96.123">
+        <g>
+          <path
+            d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803
+        c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654
+        c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246
+        c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z"
+          />
+        </g>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 438.536 438.536">
+        <g>
+          <path
+            d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+        C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+        h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+        C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+        c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+        c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+        C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+        c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+        H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+        c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+        c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+        c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+        c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+        c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"
+          />
+        </g>
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 430.117 430.117">
+        <g>
+          <path
+            d="M430.117,261.543V420.56h-92.188V272.193c0-37.271-13.334-62.707-46.703-62.707
+        c-25.473,0-40.632,17.142-47.301,33.724c-2.432,5.928-3.058,14.179-3.058,22.477V420.56h-92.219c0,0,1.242-251.285,0-277.32h92.21
+        v39.309c-0.187,0.294-0.43,0.611-0.606,0.896h0.606v-0.896c12.251-18.869,34.13-45.824,83.102-45.824
+        C384.633,136.724,430.117,176.361,430.117,261.543z M52.183,9.558C20.635,9.558,0,30.251,0,57.463
+        c0,26.619,20.038,47.94,50.959,47.94h0.616c32.159,0,52.159-21.317,52.159-47.94C103.128,30.251,83.734,9.558,52.183,9.558z
+         M5.477,420.56h92.184v-277.32H5.477V420.56z"
+          />
+        </g>
+      </symbol>
+      <symbol id="pinterest" viewBox="0 0 310.05 310.05">
+        <g>
+          <path
+            d="M245.265,31.772C223.923,11.284,194.388,0,162.101,0c-49.32,0-79.654,20.217-96.416,37.176
+        c-20.658,20.9-32.504,48.651-32.504,76.139c0,34.513,14.436,61.003,38.611,70.858c1.623,0.665,3.256,1,4.857,1
+        c5.1,0,9.141-3.337,10.541-8.69c0.816-3.071,2.707-10.647,3.529-13.936c1.76-6.495,0.338-9.619-3.5-14.142
+        c-6.992-8.273-10.248-18.056-10.248-30.788c0-37.818,28.16-78.011,80.352-78.011c41.412,0,67.137,23.537,67.137,61.425
+        c0,23.909-5.15,46.051-14.504,62.35c-6.5,11.325-17.93,24.825-35.477,24.825c-7.588,0-14.404-3.117-18.705-8.551
+        c-4.063-5.137-5.402-11.773-3.768-18.689c1.846-7.814,4.363-15.965,6.799-23.845c4.443-14.392,8.643-27.985,8.643-38.83
+        c0-18.55-11.404-31.014-28.375-31.014c-21.568,0-38.465,21.906-38.465,49.871c0,13.715,3.645,23.973,5.295,27.912
+        c-2.717,11.512-18.865,79.953-21.928,92.859c-1.771,7.534-12.44,67.039,5.219,71.784c19.841,5.331,37.576-52.623,39.381-59.172
+        c1.463-5.326,6.582-25.465,9.719-37.845c9.578,9.226,25,15.463,40.006,15.463c28.289,0,53.73-12.73,71.637-35.843
+        c17.367-22.418,26.932-53.664,26.932-87.978C276.869,77.502,265.349,51.056,245.265,31.772z"
+          />
+        </g>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+            c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+            c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+            c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+            c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+            c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+            C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+            C480.224,136.96,497.728,118.496,512,97.248z"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <!-- header -->
+
+    <header class="header">
+      <div class="container">
+        <div class="header-inner">
+          <div class="header-brand">handmade jewellery</div>
+          <ul class="header-ul">
+            <li class="header-li">
+              <a class="header-icon" href="index.html" title="Home">
+                <svg class="logo-icon">
+                  <use xlink:href="#diamond"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-li">
+              <a href="about.html" class="header-link">about</a>
+            </li>
+            <li class="header-li">
+              <a href="shop.html" class="header-link current">shop</a>
+            </li>
+            <li class="header-li">
+              <a href="contact.html" class="header-link">contact</a>
+            </li>
+            <li class="header-li">
+              <a class="header-icon" href="#" title="Wishlist">
+                <svg class="logo-icon">
+                  <use xlink:href="#heart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-li">
+              <a class="header-icon" href="#" title="Shopping Bag">
+                <svg class="logo-icon">
+                  <use xlink:href="#cart"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header-li">
+              <a class="header-icon" href="#" title="Account">
+                <svg class="logo-icon">
+                  <use xlink:href="#user"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- /header-li -->
+        </div>
+        <!-- /header-inner -->
+      </div>
+      <!-- /container -->
+    </header>
+    <!-- /header -->
+
+    <!-- breadcrumb-->
+    <div class="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb-inner">
+          <a class="breadcrumb-link" href="index.html">Home</a>
+          <a class="breadcrumb-link" href="shop.html">Shop</a>
+          <a class="breadcrumb-link last" href="#">Rings</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- rings -->
+    <div class="rings">
+      <div class="container">
+        <h1 class="heading-title">Rings</h1>
+        <div class="rings-inner">
+          <div id="btnContainer">
+            <button class="btn" onclick="listView()">
+              <i class="fa fa-bars"></i> List
+            </button>
+            <button class="btn active" onclick="gridView()">
+              <i class="fa fa-th-large"></i> Grid
+            </button>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/1.png" alt="" />
+                  </div>
+                  <h2>Ring with sapphire</h2>
+                  <h3>&euro;190.00</h3>
+                  <button id="show">show</button>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Blanditiis, temporibus, perspiciatis. Ratione, assumenda,
+                    ipsum.
+                    <button id="hide">Hide</button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/2.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/3.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/4.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/5.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/6.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/7.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/8.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/9.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/10.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/11.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/12.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/13.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/14.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/15.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/16.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/17.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/18.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/19.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/20.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/21.jpg" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/22.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/23.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="column-content">
+                <div class="column-content-inner">
+                  <div class="img-container">
+                    <img src="img/rings/24.JPG" alt="" />
+                  </div>
+                  <h2>Column 1</h2>
+                  <p>Some text..</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.rings-inner -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.rings -->
+
+    <!-- slider -->
+    <!-- discount -->
+    <!-- footer -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-one">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-item">
+              <h3 class="footer-title">information</h3>
+              <a class="footer-link" href="#">home</a>
+              <a class="footer-link" href="#">about us</a>
+              <a class="footer-link" href="#">shop</a>
+              <a class="footer-link" href="#">contact us</a>
+              <a class="footer-link" href="#">payment methods</a>
+              <a class="footer-link" href="#">packaging</a>
+              <a class="footer-link" href="#">delivery</a>
+              <a class="footer-link" href="#">company news</a>
+              <a class="footer-link" href="#">partners</a>
+            </div>
+
+            <div class="footer-item">
+              <h3 class="footer-title">categories</h3>
+              <a class="footer-link" href="#">rings</a>
+              <a class="footer-link" href="#">bracelets</a>
+              <a class="footer-link" href="#">earrings</a>
+              <a class="footer-link" href="#">broches & pins</a>
+              <a class="footer-link" href="#">pendants</a>
+              <a class="footer-link" href="#">necklaces</a>
+              <a class="footer-link" href="#">cufflinks & buttons</a>
+              <a class="footer-link" href="#">leather cords</a>
+            </div>
+
+            <div class="footer-item">
+              <h3 class="footer-title">customer care</h3>
+              <a class="footer-link" href="#">warantly</a>
+              <a class="footer-link" href="#">returns policy</a>
+              <a class="footer-link" href="#">reviews</a>
+              <a class="footer-link" href="#">size chart</a>
+
+              <a class="footer-link" href="#">jewellery care tips</a>
+              <a class="footer-link" href="#">frequently asked questions</a>
+
+              <a class="footer-link" href="#">career</a>
+              <a class="footer-link" href="#">help</a>
+            </div>
+
+            <div class="footer-item">
+              <h3 class="footer-title">contacts</h3>
+
+              <div class="footer-contacts">
+                <address class="footer-contacts-info">
+                  <a
+                    class="footer-contacts-link"
+                    href="https://www.google.com/maps/dir//56.9576721,24.123258/@56.957672,24.123258,13z?hl=en-US"
+                    title="Get Directions"
+                    target="_blank"
+                  >
+                    <svg class="footer-icon">
+                      <use xlink:href="#location"></use>
+                    </svg>
+                    <div class="footer-contacts-text">
+                      Brivibas Street 57, Latvia, Riga, LV-2167
+                    </div>
+                  </a>
+                </address>
+
+                <div class="footer-contacts-info">
+                  <a class="footer-contacts-link" href="tel:37129778899">
+                    <svg class="footer-icon">
+                      <use xlink:href="#call"></use>
+                    </svg>
+                    <div class="footer-contacts-text">+371 29778899</div>
+                  </a>
+                </div>
+
+                <div class="footer-contacts-info">
+                  <a
+                    class="footer-contacts-link"
+                    href="mailto:info@jewellery.lv"
+                  >
+                    <svg class="footer-icon">
+                      <use xlink:href="#mail"></use>
+                    </svg>
+                    <div class="footer-contacts-text">info@jewellery.lv</div>
+                  </a>
+                </div>
+
+                <div>
+                  <span class="working-days">Monday-Friday:</span>
+                  <span class="working-hours">8.30 a.m. - 5.30. p.m.</span>
+                </div>
+                <div>
+                  <span class="working-days">Saturday:</span>
+                  <span class="working-hours">9.00 a.m. - 2.00 p.m.</span>
+                </div>
+                <div>
+                  <span class="working-days">Sunday:</span>
+                  <span class="working-hours">Closed</span>
+                </div>
+              </div>
+              <!-- /.contacts -->
+            </div>
+          </div>
+          <!-- /.footer-top -->
+
+          <div class="footer-bottom">
+            <div class="footer-bottom-item">
+              <h3 class="footer-title">follow us</h3>
+
+              <div class="social-media">
+                <a class="social-item" href="#" title="Facebook">
+                  <svg class="social-icon">
+                    <use xlink:href="#facebook"></use>
+                  </svg>
+                </a>
+                <a class="social-item" href="#" title="Instagram">
+                  <svg class="social-icon">
+                    <use xlink:href="#instagram"></use>
+                  </svg>
+                </a>
+                <a class="social-item" href="#" title="Linkedin">
+                  <svg class="social-icon">
+                    <use xlink:href="#linkedin"></use>
+                  </svg>
+                </a>
+                <a class="social-item" href="#" title="Pinterest">
+                  <svg class="social-icon">
+                    <use xlink:href="#pinterest"></use>
+                  </svg>
+                </a>
+                <a class="social-item" href="#" title="Twitter">
+                  <svg class="social-icon">
+                    <use xlink:href="#twitter"></use>
+                  </svg>
+                </a>
+              </div>
+              <!-- /social-media -->
+            </div>
+            <!-- /footer-bottom-item -->
+          </div>
+          <!-- /footer-bottom -->
+        </div>
+        <!-- /container -->
+      </div>
+      <!-- /footer-first -->
+
+      <div class="footer-two">
+        <div class="footer-two-text">
+          <div>
+            <a class="footer-text" href="#">terms and conditions</a>
+            <a class="footer-text" href="#">privacy policy</a>
+          </div>
+        </div>
+        <div class="footer-two-text">
+          <div class="footer-text">
+            copyright &copy; 2019 unknown design inc.
+          </div>
+          <div class="footer-text">all rights reserved.</div>
+          <div class="footer-text">made by Olegs Krivko</div>
+        </div>
+      </div>
+      <!-- footer-second -->
+    </footer>
+    <!-- /footer -->
+
+    <!-- script -->
+
+    <script>
+      // Get the elements with class="column"
+      var elements = document.getElementsByClassName("column");
+
+      // Declare a loop variable
+      var i;
+
+      // List View
+      function listView() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.width = "100%";
+        }
+      }
+
+      // Grid View
+      function gridView() {
+        for (i = 0; i < elements.length; i++) {
+          elements[i].style.width = "25%";
+        }
+      }
+
+      /* Optional: Add active class to the current button (highlight it) */
+      var container = document.getElementById("btnContainer");
+      var btns = container.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      $("#hide").click(function () {
+        $("p").hide();
+      });
+
+      $("#show").click(function () {
+        $("p").show();
+      });
+    </script>
+  </body>
+</html>
